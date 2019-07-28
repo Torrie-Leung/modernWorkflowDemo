@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
      "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
-     "webpack": "node_modules/.bin/webpack -w"
+     "webpack": "node_modules/.bin/webpack -w",
+     "server": "webpack-dev-server"
   },
   "author": "Torrie Leung",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "webpack-dev-server": "^3.7.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
