@@ -4,9 +4,8 @@
   "description": "demo for babel and webpack",
   "main": "index.js",
   "scripts": {
-     "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
-     "webpack": "node_modules/.bin/webpack -w",
-     "server": "webpack-dev-server"
+     "build": "node_modules/.bin/webpack --mode production",
+     "serve": "webpack-dev-server --mode development"
   },
   "author": "Torrie Leung",
   "license": "MIT",
